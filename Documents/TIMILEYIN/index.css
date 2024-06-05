@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --primary-color: rgb(73, 72, 73);
+    --Black-color: rgba(0, 0, 0);
+    --Grey-color: rgb(158, 155, 155);
+    --secondary-color: rgba(255, 255, 255, 0.782);
+    --Red-color: rgb(225, 15, 15);
+    --white-color: rgba(255, 255, 255);
+}
+/* landing page */
+.container-1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./images/redCar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    text-decoration: none;
+    padding-top: 15px;
+    
+}
+/* navigation bar container */
+.navigation-bar{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(50px);
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 15px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    z-index: 1000;
+   
+}
+.navigation-container nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+
+}
+.navigation-container a{
+    letter-spacing: 0.1em;
+    margin-right: 20px;
+    text-decoration: none;
+    color: var( --Grey-color);
+}
+.navigation-container a.active{
+    color: black;
+}
+.search-signin-btns{
+    display: flex;
+}
+.search-signin-btns .search-bar{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* search input */
+.search-input{
+    background-color: var(--Grey-color) ;
+    padding: 5px;
+    border-radius: 12px;
+    margin-right: 15px;
+}
+.search-input input{
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: transparent;
+
+}
+.search-input input::placeholder{
+    color: var(--secondary-color);
+}
+/* signin button */
+.sign-in{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Black-color);
+    width: 100px;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.sign-in button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    margin-right: 4px;
+    cursor: pointer;
+}
+/* hero text for landing page */
+.hero-text{
+    margin: 90px auto ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-text h1{
+    font-size: 4.5rem;
+    color: rgba(255, 255, 255, 0.782);
+}
+.btn-css{
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    margin-right: 4px;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 15px;
+    width: 200px;
+    font-size: 1.2rem;
+    background-color: var(--Black-color);
+    box-shadow: 4px 6px 0.5rem rgb(218, 213, 213);
+}
+
+/* Rental details section */
+.Details{
+    margin: auto 15px;
+}
+.details-container{
+    background-color: rgba(240, 236, 236, 0.161);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 8px;
+    
+}
+.details-container .pick{
+    /* display: none !important; */
+    background-color: var(--secondary-color);
+    height: 100%;
+    width: 96%;
+    margin: 8px;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+}
+.details-container .pick h4{
+    font-size: 14;
+}
+.details-container .pick p{
+    font-size: 10px;
+}
+.details-container button{
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 96%;
+    margin: 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Red-color);
+    padding-top: 25px;
+}
+.Book-us{
+    font-size: 20px !important;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+/* SIGN IN PAGE CSS */
+
+
+.sign-in-form-container{
+    position: relative;
+    /* background-color: var(--Black-color); */
+   display: grid;
+   grid-template-columns: 60% 40%;
+   place-content: center;
+   justify-content: center;
+   color: var(--white-color);
+   height: 400px;
+   padding: 12px;
+   margin: 120px auto;
+}
+.form-left-hand-side{
+    position: relative;
+    background-image: url("./images/car4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white !important;
+    z-index: 1;
+    padding: 100px;
+}
+.hhero-text{
+    z-index: 12000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 120px auto; */
+}
+.sign-in-form-container .form-left-hand-side h2{
+    font-size: 3rem;
+}
+.sign-in-form-container .form-left-hand-side h4{
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: white !important;
+    z-index: 2;
+}
+.form-left-hand-side::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.57);
+    z-index: -1;
+}
+.form-right-hand-side{
+    padding: 55px;
+    background-color: black;
+    
+}
+.form-right-hand-side .sign-in-form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.form-right-hand-side .sign-in-form h2{
+    font-size: 2.3rem;
+}
+.form-right-hand-side .sign-in-form p{
+    font-size: 1rem;
+}
+.form-right-hand-side .sign-in-form .input-fields{
+    display: flex;
+    flex-direction: column;
+}
+.form-right-hand-side .sign-in-form .input-fields label{
+    margin-bottom: 7px;
+}
+.form-right-hand-side .sign-in-form .input-fields input{
+    width: 100%;
+    height: 40px;
+    outline: 1px solid white;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--white-color);
+    padding: 12px;
+}
+.form-right-hand-side .sign-in-form h2, p, .input-fields, .validation-forgot-psswrd{
+    margin-bottom: 20px;
+
+}
+.validation-forgot-psswrd{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.validation-forgot-psswrd .radio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.validation-forgot-psswrd .radio .confirm-input{
+    margin-right: 7px;
+}
+
+.form-right-hand-side .sign-in-form .Sign-in-Sign-up-btns{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 40px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 45% 45%;
+
+}
+.validation-forgot-psswrd .forgotpsswrd {
+    color: var(--white-color)
+
+}
+.form-right-hand-side .sign-in-form .Sign-in-Sign-up-btns button{
+    height: 40px;
+    
+
+}
+.form-right-hand-side .sign-in-form .Sign-in-Sign-up-btns button:nth-child(0){
+    background-color: var(--white-color);
+    color: var(--Black-color);
+    outline: none;
+    border: 1px solid var(--white-color);
+
+}
+.form-right-hand-side .sign-in-form .Sign-in-Sign-up-btns button:last-child{
+    background-color: var(--Black-color) !important;
+    color: var(--white-color);
+    outline: none;
+    border: 1px solid var(--white-color);
+}
+/* SIGN IN PAGE CSS */
+
+
+/* SIGN UP STYLING */
+.sign-up-page-container{
+    display: flex;
+} 
+.sign-up-page-container img{
+    width: 50%;
+}
+.sign-up-form-field::before{
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: red;
+    position: absolute;
+    width: 400px;
+}
+.sign-up-form-field{
+    
+    background-color: rgba(220, 220, 220, 0.298);
+    backdrop-filter: blur(50px);
+    width: 550px;
+    padding: 30px;
+    border-radius: 8px ;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    
+}
+/* SIGN-UP=PAGE CONTAINER */
+.the-signup-page-container{
+    /* background-image: url("./images/bgImg1.jpg"); */
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.959); */
+    /* backdrop-filter: blur(5px); */
+}
+.sign-up-form-field .form-area{
+    color: white;
+    width: 100%;
+   
+}
+.sign-up-form-field .form-area h2{
+    font-size: 2.5rem;
+}
+.sign-up-form-container .inputs-cont{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 45px;
+}
+.sign-up-form-container .inputs-cont .input-1{
+    border-bottom: 2px solid red;
+    margin: 2px auto;
+    
+}
+/* input with svg */
+.input-svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-svg svg{
+    margin-right: 7px;
+}
+.sign-up-form-container .inputs-cont .input-1 input{
+    border: none;
+    outline: none;
+    height: 40px;
+    padding: 12px;
+    background-color: transparent;
+}
+/* Sign up buton */
+.sign-up-btn{
+    display: flex;
+    flex-direction: column;
+
+}
+.sign-up-btn .already{
+    display: flex;
+    color: var(--Grey-color);
+}
+.sign-up-btn .already span{
+    
+}
+.sign-up-btn .already a{
+    color: var(--Grey-color);
+    text-decoration: none;
+}
+
+.sign-up-btn .Sign-up{
+    height: 40px !important;
+    width: 150px;
+    border: none;
+    outline: none;
+    background-color: none;
+    margin-bottom: 24px;
+}

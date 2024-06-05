@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Car Rental Sign In</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="signin-header">
+      <div class="logo">REN</div>
+    </div>
+    <div class="sign-in-form-container">
+      <div class="form-left-hand-side">
+        <div class="hhero-text">
+          <h2>Unlock</h2>
+          <h4>the road ahead. Affordable car rentals for every trip</h4>
+        </div>
+      </div>
+      <div class="form-right-hand-side">
+        <form action="/login" method="post" class="sign-in-form">
+          <!-- csrf_token input field -->
+          <input
+            type="hidden"
+            name="csrf_token"
+            value="your_unique_csrf_token_here"
+            id="csrf"
+          />
+          <!-- csrf_token input field -->
+
+          <h2>Sign In</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptates, in ratione quo
+          </p>
+          <div class="input-fields">
+            <label for="Email">Your Username or Email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="enter email or username"
+              id="Username"
+            />
+          </div>
+          <div class="input-fields">
+            <label for="Email">Your Password</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="enter your password"
+              id="password"
+            />
+          </div>
+          <!-- i am not a robot and forgot password -->
+          <div class="validation-forgot-psswrd">
+            <div class="radio">
+              <div class="confirm-input">
+                <input type="radio" name="I'm not a robot" id="robot-vali" />
+              </div>
+              <div>Remember me</div>
+            </div>
+            <div class="click-forgot-password">
+              <!-- forgot password -->
+
+              <a href="" class="forgotpsswrd">For got password?</a>
+            </div>
+          </div>
+          <div class="Sign-in-Sign-up-btns">
+            <button type="submit">SIGN IN</button>
+            <button>SIGN UP</button>
+          </div>
+        </form>
+      </div>
+      <!-- new added -->
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
